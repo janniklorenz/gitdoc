@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="<%= baseURL %>/data/stylesheets.css">
+	</head>
+	<body>
+		<title></title>
+	</body>
+	<ul>
+		<% files.each do |file| %>
+			<li>
+				<a href='<%= baseURL %><%= file %>.html'><%= file %></a>
+			</li>
+		<% end %>
+	<ul>
+	<div class="markdown-body">
+		<%= content %>
+	</div>
+</html>
